@@ -13,4 +13,14 @@ routes.post(
   (req, res, next) => carController.create(req, res, next),
 );
 
+routes.get(
+  '/cars',
+  (req, res, next) => carController.findAll(req, res, next),
+);
+
+routes.get(
+  '/cars/:id',
+  (req, res, next) => carController.findById(req, res, next),
+);
+
 export default routes;

@@ -21,8 +21,27 @@ class CarController {
     };
 
     try {
-      const newCar = await this.service.create(car);
-      return res.status(201).json(newCar);
+      const { status, message } = await this.service.create(car);
+      return res.status(status).json(message);
+    } catch (error) {
+      next(error);
+    }
+  }
+
+  public async findAll(_req: Request, res: Response, next: NextFunction) {
+    try {
+      const { status, message } = await this.service.findAll();
+      return res.status(status).json(message);
+    } catch (error) {
+      next(error);
+    }
+  }
+
+  public async findById(req: Request, res: Response, next: NextFunction) {
+    try {
+      const { id } = req.params;
+      const { status, message } = await this.service.findById(id);
+      return res.status(status).json(message);
     } catch (error) {
       next(error);
     }
