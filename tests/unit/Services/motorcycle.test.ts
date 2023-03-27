@@ -116,7 +116,7 @@ describe('Testando motorcycle service', function () {
     // Act
     const result = await service.remove('6421d2ad8482ffdb749e8736');
     // Assert
-    expect(result.message).to.deep.equal({ message: InvalidMongoId });
+    expect(result.message).to.deep.equal({ message: 'Motorcycle not found' });
   });
 
   afterEach(function () {
