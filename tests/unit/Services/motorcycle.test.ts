@@ -6,13 +6,15 @@ import MotorcyclesODM from '../../../src/Models/MotorcyclesODM';
 import Motorcycle from '../../../src/Domains/Motorcycle';
 import IMotorcycle from '../../../src/Interfaces/IMotorcycle';
 
+const hondaCb = 'Honda Cb 600f Hornet';
+
 describe('Testando motorcycle service', function () {
   const service = new MotorcyclesService(new MotorcyclesODM());
 
   const allMotorcycles = [
     new Motorcycle({
       id: '6421d2ad8482ffdb749e8736',
-      model: 'Honda Cb 600f Hornet',
+      model: hondaCb,
       year: 2005,
       color: 'Yellow',
       status: true,
@@ -24,7 +26,7 @@ describe('Testando motorcycle service', function () {
   
   it('Deveria criar uma motorcycle com SUCESSO', async function () {
     const motorcycleInput: IMotorcycle = {
-      model: 'Honda Cb 600f Hornet',
+      model: hondaCb,
       year: 2005,
       color: 'Yellow',
       status: true,
@@ -35,7 +37,7 @@ describe('Testando motorcycle service', function () {
   
     const motorcycleOutput = new Motorcycle({
       id: '6421d2ad8482ffdb749e8736',
-      model: 'Honda Cb 600f Hornet',
+      model: hondaCb,
       year: 2005,
       color: 'Yellow',
       status: true,
