@@ -8,6 +8,8 @@ const routes = Router();
 const motorcyclesService = new MotorcyclesService(new MotorcyclesODM());
 const motorcyclesController = new MotorcyclesController(motorcyclesService);
 
+const motorcycleIdRouter = '/motorcycles/:id';
+
 routes.post(
   '/motorcycles',
   (req, res, next) => motorcyclesController.create(req, res, next),
@@ -19,8 +21,18 @@ routes.get(
 );
 
 routes.get(
-  '/motorcycles/:id',
+  motorcycleIdRouter,
   (req, res, next) => motorcyclesController.findById(req, res, next),
+);
+
+routes.put(
+  motorcycleIdRouter,
+  (req, res, next) => motorcyclesController.update(req, res, next),
+);
+
+routes.delete(
+  motorcycleIdRouter,
+  (req, res, next) => motorcyclesController.remove(req, res, next),
 );
 
 export default routes;

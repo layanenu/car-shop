@@ -40,6 +40,22 @@ class MotorcyclesService {
     if (!motorcycleById) return errorResponse(404, motorcycleNotFound);
     return correctResponse(200, this.createMotorcycleDomain(motorcycleById));
   }
+
+  async update(id: string, motorcycle: Partial<IMotorcycle>) {
+    if (!isValidObjectId(id)) return errorResponse(422, InvalidMongoId);
+    const motorcycleUpdate = await this.motorcycleODM.update(id, motorcycle);
+
+    if (!motorcycleUpdate) return errorResponse(404, motorcycleNotFound);
+    return correctResponse(200, this.createMotorcycleDomain(motorcycleUpdate));
+  }
+
+  async remove(id: string) {
+    if (!isValidObjectId(id)) return errorResponse(422, InvalidMongoId);
+    const removed = await this.motorcycleODM.remove(id);
+
+    if (!removed) return errorResponse(404, motorcycleNotFound);
+    return correctResponse(204, '');
+  }
 }
 
 export default MotorcyclesService;
