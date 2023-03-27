@@ -1,13 +1,49 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+<strong>Car Shop :car: </strong>
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+<strong>:wavy_dash: Sobre</strong>
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+O Projeto Car Shop foi a construção de uma API com CRUD para gerenciar uma concessionária de veículos. Feito utilizando o banco de dados MongoDB através do framework do Mongoose. Projeto feito aplicando os princípios de Programação Orientada a Objetos (POO) e Test Driven Development (TDD).
+
+<strong>:wavy_dash: Testes das requisições através da extensão Thunder Client no VS Code</strong>
+
+
+
+<br />
+
+<strong>:wavy_dash: Stacks utilizadas</strong>
+<br />
+
+<details>
+  <summary><strong> Stacks </strong></summary><br />
+
+  * Node JS
+  * Typescript
+  * Express
+  * MongoDB
+  * Mongoose
+  * Docker
+  * Mocha + Chai + Sinon
+
+</details>
+
+<details>
+<summary><strong>🐳 Rodando com o Docker</strong></summary><br />
+
+Obs: O seu docker-compose precisa estar na versão 1.29 ou superior.
+ 
+Clone o projeto: <br />
+`git clone git@github.com:layanenu/trybe-futebol-clube.git`
+
+Entre no diretório do projeto: <br />
+`cd trybe-futebol-clube`
+  
+Entre no diretório app: <br />
+`cd app`
+  
+Suba a orquestração de containers: <br />
+`docker-compose up -d`
+  
+A aplicação poderá ser acessada através de: <br />
+`Back-end: localhost:3001`
+  
+</details>
