@@ -24,9 +24,6 @@ https://user-images.githubusercontent.com/99842422/228058297-64390b44-831e-4a86-
 
 <br />
 
-<strong>:wavy_dash: Stacks utilizadas</strong>
-<br />
-
 <details>
   <summary><strong> Stacks </strong></summary><br />
 
@@ -41,20 +38,28 @@ https://user-images.githubusercontent.com/99842422/228058297-64390b44-831e-4a86-
 </details>
 
 <details>
-<summary><strong>🐳 Rodando com o Docker</strong></summary><br />
+<summary><strong>:whale: Rodando com o Docker</strong></summary><br />
 
 Obs: O seu docker-compose precisa estar na versão 1.29 ou superior.
  
-Clone o projeto: <br />
-`git clone git@github.com:layanenu/car-shop.git`
+Clone o repositório:
+```bash
+git clone git@github.com:layanenu/car-shop.git
+```
 
-Entre no diretório do projeto: <br />
-`cd car-shop`
+Entre no diretório car-shop:
+```bash
+cd car-shop
+```
   
-Suba a orquestração de containers: <br />
-`docker-compose up -d`
+Suba a orquestração de containers:
+```bash
+docker-compose up -d
+```
   
-A aplicação poderá ser acessada através de: <br />
-`Back-end: localhost:3001`
+A aplicação poderá ser acessada através de:
+```bash
+localhost:3001
+```
   
 </details>
