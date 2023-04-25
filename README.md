@@ -2,7 +2,7 @@
 
 <strong>:wavy_dash: Sobre</strong>
 
-O Projeto Car Shop foi a construção de uma API com CRUD para gerenciar uma concessionária de veículos. Feito utilizando o banco de dados MongoDB através do framework do Mongoose. Projeto feito aplicando os princípios de Programação Orientada a Objetos (POO) e Test Driven Development (TDD).
+O Projeto Car Shop foi a construção de uma API com CRUD para gerenciar uma concessionária de veículos. Feito utilizando o banco de dados MongoDB através do framework do Mongoose. 
 
 <strong>:wavy_dash: Testes das requisições através da extensão Thunder Client no VS Code</strong>
 
