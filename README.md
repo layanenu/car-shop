@@ -2,7 +2,7 @@
 
 <strong>:wavy_dash: Sobre</strong>
 
-O Projeto Car Shop foi a construção de uma API com CRUD para gerenciar uma concessionária de veículos. Feito utilizando o banco de dados MongoDB através do framework do Mongoose. 
+O Projeto Car Shop foi a construção de uma API com CRUD para gerenciar uma concessionária de veículos. Feito utilizando o banco de dados MongoDB através do framework Mongoose. 
 
 <strong>:wavy_dash: Testes das requisições através da extensão Thunder Client no VS Code</strong>
 
@@ -51,6 +51,11 @@ Entre no diretório car-shop:
 ```bash
 cd car-shop
 ```
+
+Instale as dependências do projeto:
+```bash
+npm install
+```
   
 Suba a orquestração de containers:
 ```bash
@@ -60,6 +65,11 @@ docker-compose up -d
 A aplicação poderá ser acessada através de:
 ```bash
 localhost:3001
+```
+
+Para execução dos testes da camada service:
+```bash
+npm run test:mocha
 ```
   
 </details>
